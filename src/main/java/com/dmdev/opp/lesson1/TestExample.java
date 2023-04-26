@@ -1,6 +1,7 @@
 package com.dmdev.opp.lesson1;
 
 public class TestExample {
+
     public static void main(String[] args) {
         int value = 10;
         int[] values = {value, 100, 199, 23};
