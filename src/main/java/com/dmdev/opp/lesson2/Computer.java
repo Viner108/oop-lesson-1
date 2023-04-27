@@ -1,18 +1,18 @@
 package com.dmdev.opp.lesson2;
 
 public class Computer {
-    int ssd=500;
-    long ram;
+    private int ssd=500;
+    private long ram;
 
-    Computer() {
-        System.out.println("Я был создан");
-    }
     Computer(int newSsd ){
         ssd =newSsd;
     }
-    Computer(int ssd, int newRam){
+    protected Computer(int ssd, int newRam){
         this.ssd=ssd;
         ram=newRam;
+    }
+    public Computer() {
+        System.out.println("Я был создан");
     }
     void load(){
         System.out.println("Я загрузился");
@@ -23,6 +23,7 @@ public class Computer {
             System.out.println("Я открыл крышку");
         }
     }
+    //[модификаторы] returnValue name([params])
     void printState(){
         System.out.println("Ssd: " +ssd);
         System.out.println("Ram: " +ram);
